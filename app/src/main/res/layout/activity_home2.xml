@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity2"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="55dp"
+       android:background="@color/blue"
+       android:orientation="horizontal"
+       >
+      <ImageView
+          android:layout_width="33dp"
+          android:layout_height="33dp"
+         android:src="@drawable/baseline_menu_24"
+         android:layout_marginLeft="15sp"
+          android:layout_marginTop="8sp"
+         />
+      <ImageView
+          android:id="@+id/image"
+          android:layout_width="33dp"
+          android:layout_height="33dp"
+         android:src="@drawable/baseline_more_vert_24"
+         android:layout_marginLeft="270sp"
+          android:layout_marginTop="8sp"
+
+         />
+
+   </LinearLayout>
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="607dp"
+       android:id="@+id/container"/>
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/BottomNavigationView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:menu="@menu/nav_menu"
+       app:labelVisibilityMode="labeled"
+       android:layout_alignParentBottom="true"
+       android:outlineAmbientShadowColor="@color/blue"/>
+
+</LinearLayout>

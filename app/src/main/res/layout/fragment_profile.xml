@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:id="@+id/pro"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pro"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/NameEdit"
+         android:textSize="18sp"
+        android:hint="Enter you name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginHorizontal="20dp"
+        android:id="@+id/Emailedit"
+         android:textSize="18sp"
+        android:layout_below="@id/NameEdit"
+        android:layout_marginTop="15sp"
+        android:hint="Enter you email"
+         />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginHorizontal="20dp"
+        android:id="@+id/Ageedit"
+         android:textSize="18sp"
+        android:layout_below="@id/Emailedit"
+        android:layout_marginTop="15sp"
+        android:hint="Enter you age"
+         />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginHorizontal="20dp"
+        android:id="@+id/Addressedit"
+         android:textSize="18sp"
+        android:layout_below="@id/Ageedit"
+        android:layout_marginTop="15sp"
+        android:hint="Enter you address"
+         />
+ <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginHorizontal="20dp"
+        android:id="@+id/Phoneedit"
+         android:textSize="18sp"
+        android:layout_below="@id/Addressedit"
+        android:layout_marginTop="15sp"
+        android:hint="Enter you phone"
+         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginHorizontal="80dp"
+        android:text="Update"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:id="@+id/editbtn"
+        android:layout_marginTop="220sp"
+       android:layout_below="@id/Ageedit"
+         />
+
+</RelativeLayout>

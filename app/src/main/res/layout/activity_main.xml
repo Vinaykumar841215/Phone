@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/name"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone OTP Verification"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/name"
+                android:layout_marginTop="40sp"
+                android:padding="8sp"
+                android:hint="Enter Phone Number"
+                android:drawableLeft="@drawable/baseline_perm_phone_msg_24"
+                android:drawablePadding="9sp"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:maxLength="10"
+                />
+            <Button
+                android:id="@+id/send_otp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Send OTP"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:backgroundTint="@color/blue"
+                android:layout_marginTop="25sp"
+                app:cornerRadius="20sp"
+                />
+
+
+            <EditText
+                android:id="@+id/verify_otp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/name"
+                android:layout_marginTop="20sp"
+                android:padding="8sp"
+                android:hint="Correct OTP"
+                android:drawableLeft="@drawable/baseline_lock_person_24"
+                android:drawablePadding="9sp"
+                android:maxLength="6"
+                android:inputType="number"
+                android:textColor="@color/black"
+
+                />
+
+            <Button
+                android:id="@+id/verify_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Verify OTP"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:backgroundTint="#FF6F00"
+                android:layout_marginTop="25sp"
+                app:cornerRadius="20sp"
+                />
+<!--            <TextView-->
+<!--                android:id="@+id/redireotText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=""-->
+<!--                android:layout_gravity="center"-->
+<!--                android:padding="8sp"-->
+<!--                android:textSize="18sp"-->
+<!--                android:layout_marginTop="12sp"-->
+<!--                android:textColor="#006064"-->
+
+<!--                />-->
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
